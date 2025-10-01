@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Gonita • Civil Engineer & Project Manager</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+
+  <!-- Tailwind CSS (Development only) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" >
+</head>
+
+  <body>
+    <!-- ======================== HEADER / NAV ======================== -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+        <a href="#home" class="flex items-center gap-2 font-extrabold text-xl text-slate-900">
+          <span class="w-2.5 h-6 bg-sky-600 rounded"></span>
+          Gonita
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="hidden md:flex items-center gap-6 font-medium text-slate-700">
+          <li><a class="hover:text-sky-700" href="#about">About</a></li>
+          <li><a class="hover:text-sky-700" href="#skills">Skills</a></li>
+          <li><a class="hover:text-sky-700" href="#projects">Projects</a></li>
+          <li><a class="hover:text-sky-700" href="#contact">Contact</a></li>
+          <li><a class="btn btn-primary" href="#contact"><i class="fa-solid fa-paper-plane"></i><span>Hire Me</span></a></li>
+        </ul>
+
+        <!-- Mobile hamburger -->
+        <button id="navBtn" class="md:hidden p-2 rounded-lg border border-slate-300 hover:bg-slate-50" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <!-- Mobile Drawer -->
+      <div id="mobileNav" class="md:hidden hidden border-t border-slate-200 bg-white">
+        <ul class="max-w-6xl mx-auto px-4 py-3 grid gap-3 text-slate-700 font-medium">
+          <li><a class="block py-2" href="#about">About</a></li>
+          <li><a class="block py-2" href="#skills">Skills</a></li>
+          <li><a class="block py-2" href="#projects">Projects</a></li>
+          <li><a class="block py-2" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ======================== HERO ======================== -->
+    <section id="home" class="relative">
+      <div class="relative h-[58vh] md:h-[68vh] flex items-end">
+        <img src="assets/profile-banner.jpeg" alt="Profile Banner" class="absolute inset-0 w-full h-full object-cover" >
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/20 to-transparent"></div>
+        <div class="relative max-w-6xl mx-auto px-4 pb-12 text-white animate-fade-in-up">
+          <h1 class="heading text-4xl md:text-6xl font-bold leading-tight">Civil Engineer &<br class="hidden md:block"> Construction Project Manager</h1>
+          <p class="mt-3 max-w-2xl text-slate-100/90">Project management in real estate, industrial, and commercial sectors — focusing on quality, safety, and timeliness.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+            <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-envelope"></i> Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- ======================== ABOUT ======================== -->
+      <section id="about" class="py-14 md:py-20">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-5 gap-10 items-start">
+          <div class="md:col-span-3">
+            <h2 class="heading text-3xl md:text-4xl font-bold">About Me</h2>
+            <p class="mt-4 text-slate-700 leading-relaxed">
+              I have more than <strong>15 years</strong> of experience in <em>construction project management</em>, from cost planning and scheduling to delivering multi-million-dollar projects.  
+              Educational background: <strong>Civil Engineering – Universitas Gadjah Mada</strong>, and further studies at <strong>Hunter College, New York</strong>.
+            </p>
+            <p class="mt-3 text-slate-700 leading-relaxed">
+              Used to working across divisions: architects, contractors, and local authorities, ensuring projects are completed on time, within budget, and with safety as the top priority.
+            </p>
+          </div>
+          <aside class="md:col-span-2 card p-6">
+            <h3 class="font-semibold text-slate-900">Profile Summary</h3>
+            <ul class="mt-3 space-y-2 text-slate-700">
+              <li><i class="fa-solid fa-location-dot text-sky-600 mr-2"></i> New York, USA</li>
+              <li><i class="fa-solid fa-language text-sky-600 mr-2"></i> Indonesian • English • Mandarin</li>
+              <li><i class="fa-solid fa-user-tie text-sky-600 mr-2"></i> Construction PM, Cost Control, Negotiation</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ======================== SKILLS ======================== -->
+      <section id="skills" class="py-14 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="heading text-3xl md:text-4xl font-bold">Skills & Badges</h2>
+          <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card p-6 transition hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-sitemap text-sky-600 text-2xl animate-float"></i>
+                <h3 class="font-semibold">Project Management</h3>
+              </div>
+              <p class="mt-3 text-sm text-slate-600">Planning, quality control, and cross-team coordination.</p>
+            </div>
+            <div class="card p-6 transition hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-calculator text-sky-600 text-2xl animate-float"></i>
+                <h3 class="font-semibold">Cost Estimation</h3>
+              </div>
+              <p class="mt-3 text-sm text-slate-600">Cost control, value engineering, procurement.</p>
+            </div>
+            <div class="card p-6 transition hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-handshake text-sky-600 text-2xl animate-float"></i>
+                <h3 class="font-semibold">Negotiation & Contracts</h3>
+              </div>
+              <p class="mt-3 text-sm text-slate-600">Tendering, contracts, and vendor management.</p>
+            </div>
+            <div class="card p-6 transition hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-helmet-safety text-sky-600 text-2xl animate-float"></i>
+                <h3 class="font-semibold">Site Management</h3>
+              </div>
+              <p class="mt-3 text-sm text-slate-600">Safety, documentation, and progress reporting.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================== PROJECTS ======================== -->
+      <section id="projects" class="py-14 md:py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex items-end justify-between gap-4">
+            <h2 class="heading text-3xl md:text-4xl font-bold">Key Projects</h2>
+            <a href="#contact" class="hidden md:inline-flex btn btn-primary"><i class="fa-solid fa-file-signature"></i> Request Collaboration</a>
+          </div>
+
+          <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Project Card 1 -->
+            <article class="card group overflow-hidden">
+              <img src="assets/kawasan-bintang.jpeg" alt="Kawasan Bintang Industrial Park II" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105" >
+              <div class="p-5">
+                <h3 class="font-semibold text-lg">Kawasan Bintang Industrial Park II</h3>
+                <p class="mt-2 text-sm text-slate-600">Management of a ±70 ha industrial park development: main infrastructure & industrial buildings.</p>
+              </div>
+            </article>
+
+            <!-- Project Card 2 -->
+            <article class="card group overflow-hidden">
+              <img src="assets/ocarina.jpeg" alt="Ocarina & Ocarina Waterpark" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105" >
+              <div class="p-5">
+                <h3 class="font-semibold text-lg">Ocarina & Ocarina Waterpark</h3>
+                <p class="mt-2 text-sm text-slate-600">Development of amusement park & waterpark: on-time, on-budget.</p>
+              </div>
+            </article>
+
+            <!-- Project Card 3 -->
+            <article class="card group overflow-hidden">
+              <img src="assets/uib.jpeg" alt="University Building (UIB)" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105" >
+              <div class="p-5">
+                <h3 class="font-semibold text-lg">University Building (UIB)</h3>
+                <p class="mt-2 text-sm text-slate-600">Campus project supervision, achieving ±10% cost savings from the budget.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Quotes -->
+          <figure class="mt-12 card p-8 border-sky-100">
+            <blockquote class="text-xl md:text-2xl leading-relaxed text-slate-800">
+              “Quality and timeliness are top priorities in every project.”
+            </blockquote>
+            <figcaption class="mt-3 text-slate-500">— Work principle</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ======================== HOBBIES ======================== -->
+      <section id="hobbies" class="py-14">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="heading text-3xl md:text-4xl font-bold">Hobbies & Interests</h2>
+          <div class="mt-6 card p-6 flex items-center gap-4">
+            <i class="fa-solid fa-bread-slice text-3xl text-sky-600"></i>
+            <p class="text-slate-700">Baking & exploring recipes — training precision, creativity, and inspiration.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================== CONTACT ======================== -->
+      <section id="contact" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+          <h2 class="heading text-3xl md:text-4xl font-bold">Contact</h2>
+          <p class="mt-2 text-slate-600">Want to discuss a project or collaboration? Send a message using the form below, or connect via email/LinkedIn.</p>
+
+          <div class="mt-8 grid md:grid-cols-2 gap-8">
+            <!-- Form -->
+            <form class="card p-6 space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent (demo).');">
+              <div>
+                <label class="block text-sm font-medium text-slate-700">Name</label>
+                <input type="text" required class="mt-1 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500" placeholder="Your name" >
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-slate-700">Email</label>
+                <input type="email" required class="mt-1 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500" placeholder="name@email.com" >
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-slate-700">Message</label>
+                <textarea rows="4" required class="mt-1 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500" placeholder="Write your message..."></textarea>
+              </div>
+              <button class="btn btn-primary w-full"><i class="fa-solid fa-paper-plane"></i> Send</button>
+            </form>
+
+            <!-- Direct Contacts -->
+            <div class="card p-6 space-y-4">
+              <a href="mailto:donita.kwek@gmail.com" class="flex items-center gap-3 text-slate-700 hover:text-sky-700 transition">
+                <i class="fa-solid fa-envelope text-xl text-sky-600"></i> donita.kwek@gmail.com
+              </a>
+              <a href="https://www.linkedin.com/in/gonita-6072b0bb/" target="_blank" class="flex items-center gap-3 text-slate-700 hover:text-sky-700 transition">
+                <i class="fa-brands fa-linkedin text-xl text-sky-600"></i> Gonita on LinkedIn
+              </a>
+              <a href="https://github.com/nitagonita" target="_blank" class="flex items-center gap-3 text-slate-700 hover:text-sky-700 transition">
+                <i class="fa-brands fa-github text-xl text-sky-600"></i> Gonita on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="py-8 border-t border-slate-200 bg-slate-50">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-600">
+        <p>© <span id="year"></span> Gonita. All rights reserved.</p>
+        <a href="#home" class="inline-flex items-center gap-2 hover:text-sky-700"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+      </div>
+    </footer>
+
+    <!-- Small helpers for interactivity -->
+    <script>
+      // Mobile nav toggle
+      const navBtn = document.getElementById('navBtn');
+      const mobileNav = document.getElementById('mobileNav');
+      navBtn?.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+
+      // Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
